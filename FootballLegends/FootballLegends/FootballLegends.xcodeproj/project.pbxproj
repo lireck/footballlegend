@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19382A081CD160C2003BDDD5 /* BuyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19382A071CD160C2003BDDD5 /* BuyButton.swift */; };
+		19836F061CD16CAC004C93E3 /* WhatsPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19836F051CD16CAC004C93E3 /* WhatsPlayerViewController.swift */; };
 		19F38B771CBEDF7D005A8092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F38B761CBEDF7D005A8092 /* AppDelegate.swift */; };
 		19F38B7C1CBEDF7D005A8092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F38B7A1CBEDF7D005A8092 /* Main.storyboard */; };
 		19F38B7E1CBEDF7D005A8092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F38B7D1CBEDF7D005A8092 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19382A071CD160C2003BDDD5 /* BuyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyButton.swift; sourceTree = "<group>"; };
+		19836F051CD16CAC004C93E3 /* WhatsPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsPlayerViewController.swift; sourceTree = "<group>"; };
 		19F38B731CBEDF7D005A8092 /* FootballLegends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballLegends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F38B761CBEDF7D005A8092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19F38B7B1CBEDF7D005A8092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 				19F530871CBEE04D0082157A /* BaseViewController.swift */,
 				19F530891CBEE1C20082157A /* MenuViewController.swift */,
 				19F5308B1CBEF3870082157A /* GameModesViewController.swift */,
+				19836F051CD16CAC004C93E3 /* WhatsPlayerViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				19F5308E1CBEF7DC0082157A /* GameModesCell.swift */,
+				19382A071CD160C2003BDDD5 /* BuyButton.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -137,6 +143,7 @@
 				TargetAttributes = {
 					19F38B721CBEDF7D005A8092 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = KP3N9J848G;
 					};
 				};
 			};
@@ -180,7 +187,9 @@
 				19F38B771CBEDF7D005A8092 /* AppDelegate.swift in Sources */,
 				19F5308C1CBEF3870082157A /* GameModesViewController.swift in Sources */,
 				19F5308A1CBEE1C20082157A /* MenuViewController.swift in Sources */,
+				19382A081CD160C2003BDDD5 /* BuyButton.swift in Sources */,
 				19F530881CBEE04D0082157A /* BaseViewController.swift in Sources */,
+				19836F061CD16CAC004C93E3 /* WhatsPlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,11 +303,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FootballLegends/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NULP.FootballLegends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -308,11 +320,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FootballLegends/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NULP.FootballLegends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

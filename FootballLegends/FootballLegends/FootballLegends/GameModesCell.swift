@@ -9,5 +9,28 @@
 import UIKit
 
 class GameModesCell: UICollectionViewCell {
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupContainerView()
+        
+    }
+    
+// MARK: Private methods
+    
+   private func setupContainerView() {
+        containerView.layer.cornerRadius = 20
+        containerView.layer.masksToBounds = true
+    }
+}
+
+extension GameModesCell {
+    func fillWithInfo(info : String) {
+        imageView.image = UIImage(named: info)
+        titleLabel.text = info
+    }
     
 }

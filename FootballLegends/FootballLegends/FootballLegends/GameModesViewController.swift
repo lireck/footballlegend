@@ -12,6 +12,9 @@ class GameModesViewController: BaseViewController, UICollectionViewDataSource, U
 // MARK: Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     
+// MARK: Properties
+    var gameModesNames = ["What's Player?", "What's Team?", "What's Event?"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,29 +25,29 @@ class GameModesViewController: BaseViewController, UICollectionViewDataSource, U
     }
     
 // MARK: Collection view data source and delegate
-    
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return gameModesNames.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(String(GameModesCell), forIndexPath: indexPath) as! GameModesCell
+        let gameModeName = gameModesNames[indexPath.row] as String
+        cell.fillWithInfo(gameModeName)
+        
         return cell
         
     }
     
 // MARK: Collection view flow layout delegate
-    
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return collectionView.frame.size
     }
     
 // MARK: Actions
-    
     @IBAction func backAction(sender: AnyObject) {
         navigationController?.popViewControllerAnimated(true)
     }
