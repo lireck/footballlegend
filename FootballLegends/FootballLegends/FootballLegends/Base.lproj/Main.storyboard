@@ -553,6 +553,9 @@
                             <constraint firstItem="TXn-In-hv1" firstAttribute="leading" secondItem="QJ6-lT-5VY" secondAttribute="trailing" id="yq7-s8-5Ke"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playerImageView" destination="79x-Xy-59b" id="WHN-kx-nAu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpE-Xh-AAA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

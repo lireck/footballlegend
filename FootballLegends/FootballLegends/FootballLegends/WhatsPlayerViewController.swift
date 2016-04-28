@@ -11,30 +11,36 @@ import UIKit
 let numberOfLetters = 14
 
 class WhatsPlayerViewController: BaseViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    @IBOutlet weak var playerImageView: UIImageView!
+    
     let alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
     var lettersSet = Set<String>()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         lettersSet = getSetOfRandomLetters(numberOfLetters)
-        var views = Array<UIView>()
-        let view1 = LetterView.createView()
-        view1.frame = CGRectMake(0, 0, 30, 30)
-        let view2 = LetterView.createView()
-        view2.frame = CGRectMake(view1.frame.origin.x + view1.frame.size.width + 8, 0, 30, 30)
-        views.append(view1)
-        views.append(view2)
-        var totalWidth = 0.0 as CGFloat
-        for _ in views {
-            totalWidth += 38
-        }
-        
-        let sx = (view.frame.size.width / 2) - (totalWidth / 2)
-        let sview = UIView.init(frame: CGRectMake(sx, 240, totalWidth, 30))
-        for view in views {
-            sview.addSubview(view)
-        }
-        view.addSubview(sview)
+        let letterViewBuilder = LetterViewBuilder.init(numberOfViews: 5)
+        view.addSubview(letterViewBuilder.getLetterViewsInSuperviewRect(view.frame, underTheViewRect: playerImageView.frame))
+//        var views = Array<UIView>()
+//        let view1 = LetterView.createView()
+//        view1.frame = CGRectMake(0, 0, 30, 30)
+//        let view2 = LetterView.createView()
+//        view2.frame = CGRectMake(view1.frame.origin.x + view1.frame.size.width + 8, 0, 30, 30)
+//        views.append(view1)
+//        views.append(view2)
+//        var totalWidth = 0.0 as CGFloat
+//        for _ in views {
+//            totalWidth += 38
+//        }
+//        
+//        let sx = (view.frame.size.width / 2) - (totalWidth / 2)
+//        let sview = UIView.init(frame: CGRectMake(sx, 240, totalWidth, 30))
+//        for view in views {
+//            sview.addSubview(view)
+//        }
+//        view.addSubview(sview)
         
     }
 
