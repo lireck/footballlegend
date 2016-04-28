@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		19382A081CD160C2003BDDD5 /* BuyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19382A071CD160C2003BDDD5 /* BuyButton.swift */; };
-		19836F061CD16CAC004C93E3 /* WhatsPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19836F051CD16CAC004C93E3 /* WhatsPlayerViewController.swift */; };
+		19836F081CD16D02004C93E3 /* WhatsPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19836F071CD16D02004C93E3 /* WhatsPlayerViewController.swift */; };
+		19836F0A1CD17BF3004C93E3 /* WhatsPlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19836F091CD17BF3004C93E3 /* WhatsPlayerCell.swift */; };
+		19836F0C1CD19622004C93E3 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19836F0B1CD19622004C93E3 /* LetterView.swift */; };
+		19836F0E1CD19638004C93E3 /* LetterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19836F0D1CD19638004C93E3 /* LetterView.xib */; };
 		19F38B771CBEDF7D005A8092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F38B761CBEDF7D005A8092 /* AppDelegate.swift */; };
 		19F38B7C1CBEDF7D005A8092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F38B7A1CBEDF7D005A8092 /* Main.storyboard */; };
 		19F38B7E1CBEDF7D005A8092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F38B7D1CBEDF7D005A8092 /* Assets.xcassets */; };
@@ -21,7 +24,10 @@
 
 /* Begin PBXFileReference section */
 		19382A071CD160C2003BDDD5 /* BuyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyButton.swift; sourceTree = "<group>"; };
-		19836F051CD16CAC004C93E3 /* WhatsPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsPlayerViewController.swift; sourceTree = "<group>"; };
+		19836F071CD16D02004C93E3 /* WhatsPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsPlayerViewController.swift; sourceTree = "<group>"; };
+		19836F091CD17BF3004C93E3 /* WhatsPlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsPlayerCell.swift; sourceTree = "<group>"; };
+		19836F0B1CD19622004C93E3 /* LetterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
+		19836F0D1CD19638004C93E3 /* LetterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LetterView.xib; sourceTree = "<group>"; };
 		19F38B731CBEDF7D005A8092 /* FootballLegends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballLegends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F38B761CBEDF7D005A8092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19F38B7B1CBEDF7D005A8092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,7 +103,7 @@
 				19F530871CBEE04D0082157A /* BaseViewController.swift */,
 				19F530891CBEE1C20082157A /* MenuViewController.swift */,
 				19F5308B1CBEF3870082157A /* GameModesViewController.swift */,
-				19836F051CD16CAC004C93E3 /* WhatsPlayerViewController.swift */,
+				19836F071CD16D02004C93E3 /* WhatsPlayerViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -107,6 +113,9 @@
 			children = (
 				19F5308E1CBEF7DC0082157A /* GameModesCell.swift */,
 				19382A071CD160C2003BDDD5 /* BuyButton.swift */,
+				19836F091CD17BF3004C93E3 /* WhatsPlayerCell.swift */,
+				19836F0B1CD19622004C93E3 /* LetterView.swift */,
+				19836F0D1CD19638004C93E3 /* LetterView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -172,6 +181,7 @@
 			files = (
 				19F38B811CBEDF7D005A8092 /* LaunchScreen.storyboard in Resources */,
 				19F38B7E1CBEDF7D005A8092 /* Assets.xcassets in Resources */,
+				19836F0E1CD19638004C93E3 /* LetterView.xib in Resources */,
 				19F38B7C1CBEDF7D005A8092 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,12 +194,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				19F5308F1CBEF7DC0082157A /* GameModesCell.swift in Sources */,
+				19836F0C1CD19622004C93E3 /* LetterView.swift in Sources */,
 				19F38B771CBEDF7D005A8092 /* AppDelegate.swift in Sources */,
 				19F5308C1CBEF3870082157A /* GameModesViewController.swift in Sources */,
 				19F5308A1CBEE1C20082157A /* MenuViewController.swift in Sources */,
+				19836F0A1CD17BF3004C93E3 /* WhatsPlayerCell.swift in Sources */,
 				19382A081CD160C2003BDDD5 /* BuyButton.swift in Sources */,
 				19F530881CBEE04D0082157A /* BaseViewController.swift in Sources */,
-				19836F061CD16CAC004C93E3 /* WhatsPlayerViewController.swift in Sources */,
+				19836F081CD16D02004C93E3 /* WhatsPlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

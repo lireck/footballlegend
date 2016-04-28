@@ -8,6 +8,11 @@
 
 import UIKit
 
+let whatsPleyerSequeIdentifier = "WhatsPleyerSeque"
+enum GameMode {
+    case GameModeWhatsPlayer, GameModeWhatsTeam, GameModeWhatsEvent
+}
+
 class GameModesViewController: BaseViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 // MARK: Outlets
     @IBOutlet weak var collectionView: UICollectionView!
@@ -40,6 +45,20 @@ class GameModesViewController: BaseViewController, UICollectionViewDataSource, U
         
         return cell
         
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        switch indexPath.row {
+        case 0:
+            performSegueWithIdentifier(whatsPleyerSequeIdentifier, sender: self)
+        case 1:
+            NSLog("team")
+        case 2:
+            NSLog("event")
+        default:
+            NSLog("default")
+        }
     }
     
 // MARK: Collection view flow layout delegate
