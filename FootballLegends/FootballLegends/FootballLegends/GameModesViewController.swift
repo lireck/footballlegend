@@ -9,9 +9,8 @@
 import UIKit
 
 let whatsPleyerSequeIdentifier = "WhatsPleyerSeque"
-enum GameMode {
-    case GameModeWhatsPlayer, GameModeWhatsTeam, GameModeWhatsEvent
-}
+let whatsTeamSequeIdentifier = "WhatsTeamSeque"
+let whatsEventSequeIndentifier = "WhatsEventSeque"
 
 class GameModesViewController: BaseViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 // MARK: Outlets
@@ -53,9 +52,9 @@ class GameModesViewController: BaseViewController, UICollectionViewDataSource, U
         case 0:
             performSegueWithIdentifier(whatsPleyerSequeIdentifier, sender: self)
         case 1:
-            NSLog("team")
+            performSegueWithIdentifier(whatsTeamSequeIdentifier, sender: self)
         case 2:
-            NSLog("event")
+            performSegueWithIdentifier(whatsEventSequeIndentifier, sender: self)
         default:
             NSLog("default")
         }

@@ -36,18 +36,12 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7702022622699386" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                 <state key="normal" title="HIGH SCORES"/>
-                                <connections>
-                                    <segue destination="1OO-41-YJu" kind="show" id="Bol-7C-OZi"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qN-SC-7rB">
                                 <rect key="frame" x="40" y="381" width="240" height="43"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7702022622699386" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                 <state key="normal" title="SIGN IN"/>
-                                <connections>
-                                    <segue destination="LBC-Oe-yms" kind="show" id="TMJ-oc-ou8"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnU-dt-KVj">
                                 <rect key="frame" x="20" y="432" width="280" height="28"/>
@@ -59,9 +53,6 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7702022622699386" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                 <state key="normal" title="SETTINGS"/>
-                                <connections>
-                                    <segue destination="iUM-6Q-wc6" kind="show" id="6JO-So-DCC"/>
-                                </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="KVC-lO-phi">
                                 <rect key="frame" x="90" y="20" width="140" height="140"/>
@@ -102,60 +93,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OB5-aF-yZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1359" y="-167"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Wod-iH-u0e">
-            <objects>
-                <viewController id="1OO-41-YJu" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="m1A-Pb-9HA"/>
-                        <viewControllerLayoutGuide type="bottom" id="3fx-DI-yEH"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cJP-8d-yyK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hw8-MW-LXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1922" y="-465"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="FM3-Ku-upX">
-            <objects>
-                <viewController id="LBC-Oe-yms" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SQi-wh-OGO"/>
-                        <viewControllerLayoutGuide type="bottom" id="R9x-Fb-Zjf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="LLD-d8-4OF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jaH-69-Wlv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1922" y="860"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Zkg-6A-TQo">
-            <objects>
-                <viewController id="iUM-6Q-wc6" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bSC-Ai-EgB"/>
-                        <viewControllerLayoutGuide type="bottom" id="p0D-aU-0PO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="LSG-f8-CeM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0uZ-cd-gWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1922" y="187"/>
         </scene>
         <!--Game Modes View Controller-->
         <scene sceneID="RAK-5z-ZTo">
@@ -422,11 +359,296 @@
                     <connections>
                         <outlet property="collectionView" destination="9k8-1r-Fuh" id="Rj5-sJ-LzW"/>
                         <segue destination="DZS-Du-qS3" kind="show" identifier="WhatsPleyerSeque" id="YjY-o0-6Ho"/>
+                        <segue destination="RzU-PG-bnu" kind="show" identifier="WhatsTeamSeque" id="4Tz-0t-Vsx"/>
+                        <segue destination="AJk-r9-4ss" kind="show" identifier="WhatsEventSeque" id="R04-sq-6sX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bw-fj-ICE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1902" y="-1083"/>
+        </scene>
+        <!--Whats Team View Controller-->
+        <scene sceneID="pXF-Qr-AO8">
+            <objects>
+                <viewController id="RzU-PG-bnu" customClass="WhatsTeamViewController" customModule="FootballLegends" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Po3-95-Ujr"/>
+                        <viewControllerLayoutGuide type="bottom" id="DJV-92-ffw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iBm-zC-VCL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgd-Nq-ade">
+                                <rect key="frame" x="20" y="20" width="32" height="32"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <action selector="backAction:" destination="RzU-PG-bnu" eventType="touchUpInside" id="IDY-A0-X1e"/>
+                                    <action selector="backAction:" destination="CpN-Yk-aSa" eventType="touchUpInside" id="RwE-f9-Olo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHa-D4-JIH">
+                                <rect key="frame" x="274" y="20" width="26" height="26"/>
+                                <state key="normal" image="soundon"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="Po1-cE-E0n">
+                                <rect key="frame" x="218" y="20" width="25" height="25"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8Y-K3-fLD">
+                                <rect key="frame" x="199" y="22" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cup" translatesAutoresizingMaskIntoConstraints="NO" id="8LF-Gv-IXm">
+                                <rect key="frame" x="174" y="20" width="25" height="25"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFx-jD-B3A">
+                                <rect key="frame" x="243" y="23" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's Team?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWL-nI-Tww">
+                                <rect key="frame" x="20" y="60" width="280" height="36"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="29"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barca" translatesAutoresizingMaskIntoConstraints="NO" id="43A-mR-uyj">
+                                <rect key="frame" x="20" y="104" width="280" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="9sV-5i-iEE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnj-bA-B2V">
+                                <rect key="frame" x="20" y="454" width="141" height="43"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7702022623" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Real Madrid CF "/>
+                                <connections>
+                                    <action selector="aAnswerAction:" destination="RzU-PG-bnu" eventType="touchUpInside" id="zM9-w7-qJg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDU-ek-zOi">
+                                <rect key="frame" x="169" y="454" width="140" height="43"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7702022623" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="FC Bayern Munchen "/>
+                                <connections>
+                                    <action selector="bAnswerAction:" destination="RzU-PG-bnu" eventType="touchUpInside" id="SfP-gW-68q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKU-JM-2PX">
+                                <rect key="frame" x="20" y="505" width="141" height="43"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7702022623" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Yun-Yf-usf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title=" FC Barcelona"/>
+                                <connections>
+                                    <action selector="cAnswerAction:" destination="RzU-PG-bnu" eventType="touchUpInside" id="etx-Tg-cSh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyx-iv-QfX">
+                                <rect key="frame" x="169" y="505" width="140" height="43"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7702022623" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="11"/>
+                                <state key="normal" title="Club Atletico de Madrid"/>
+                                <connections>
+                                    <action selector="dAnswerAction:" destination="RzU-PG-bnu" eventType="touchUpInside" id="Z0H-FR-88n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25490196079999999" green="0.61960784310000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EFx-jD-B3A" firstAttribute="leading" secondItem="Po1-cE-E0n" secondAttribute="trailing" id="2Wm-01-AQJ"/>
+                            <constraint firstItem="wgd-Nq-ade" firstAttribute="top" secondItem="Po3-95-Ujr" secondAttribute="bottom" constant="20" id="2i3-D1-0yf"/>
+                            <constraint firstItem="tHa-D4-JIH" firstAttribute="top" secondItem="Po3-95-Ujr" secondAttribute="bottom" constant="20" id="5Sb-kW-V0y"/>
+                            <constraint firstItem="43A-mR-uyj" firstAttribute="leading" secondItem="iBm-zC-VCL" secondAttribute="leading" constant="20" id="5TA-8j-OVs"/>
+                            <constraint firstItem="Dyx-iv-QfX" firstAttribute="bottom" secondItem="dKU-JM-2PX" secondAttribute="bottom" id="7xu-fT-Yec"/>
+                            <constraint firstItem="dKU-JM-2PX" firstAttribute="height" secondItem="Qnj-bA-B2V" secondAttribute="height" id="A8c-XU-DsG"/>
+                            <constraint firstAttribute="trailing" secondItem="zWL-nI-Tww" secondAttribute="trailing" constant="20" id="CCc-Oe-yWd"/>
+                            <constraint firstItem="dKU-JM-2PX" firstAttribute="height" secondItem="Dyx-iv-QfX" secondAttribute="height" id="DhF-TX-aOB"/>
+                            <constraint firstItem="dKU-JM-2PX" firstAttribute="height" secondItem="PDU-ek-zOi" secondAttribute="height" id="HZj-Hf-g5u"/>
+                            <constraint firstItem="43A-mR-uyj" firstAttribute="top" secondItem="zWL-nI-Tww" secondAttribute="bottom" constant="8" id="HhW-iY-7HH"/>
+                            <constraint firstItem="tHa-D4-JIH" firstAttribute="top" secondItem="Po1-cE-E0n" secondAttribute="top" id="Ikl-cT-j19"/>
+                            <constraint firstItem="wgd-Nq-ade" firstAttribute="leading" secondItem="iBm-zC-VCL" secondAttribute="leading" constant="20" id="M9p-un-2NU"/>
+                            <constraint firstItem="h8Y-K3-fLD" firstAttribute="leading" secondItem="8LF-Gv-IXm" secondAttribute="trailing" id="Nea-HL-HKx"/>
+                            <constraint firstItem="dKU-JM-2PX" firstAttribute="leading" secondItem="Qnj-bA-B2V" secondAttribute="leading" id="PA6-qk-3hX"/>
+                            <constraint firstAttribute="trailing" secondItem="Dyx-iv-QfX" secondAttribute="trailing" constant="11" id="Qus-2d-M7h"/>
+                            <constraint firstItem="PDU-ek-zOi" firstAttribute="leading" secondItem="Qnj-bA-B2V" secondAttribute="trailing" constant="8" id="S7g-Rg-kBr"/>
+                            <constraint firstItem="dKU-JM-2PX" firstAttribute="width" secondItem="Dyx-iv-QfX" secondAttribute="width" id="SbZ-Sx-RdA"/>
+                            <constraint firstItem="tHa-D4-JIH" firstAttribute="centerY" secondItem="EFx-jD-B3A" secondAttribute="centerY" id="Wxk-ia-gH7"/>
+                            <constraint firstItem="Po1-cE-E0n" firstAttribute="top" secondItem="8LF-Gv-IXm" secondAttribute="top" id="Y1y-d4-XJT"/>
+                            <constraint firstItem="DJV-92-ffw" firstAttribute="top" secondItem="dKU-JM-2PX" secondAttribute="bottom" constant="20" id="Z01-2H-7rW"/>
+                            <constraint firstItem="Po1-cE-E0n" firstAttribute="leading" secondItem="h8Y-K3-fLD" secondAttribute="trailing" constant="8" id="ZFt-Wg-OGc"/>
+                            <constraint firstItem="Dyx-iv-QfX" firstAttribute="trailing" secondItem="PDU-ek-zOi" secondAttribute="trailing" id="ZYi-iA-rff"/>
+                            <constraint firstItem="dKU-JM-2PX" firstAttribute="leading" secondItem="iBm-zC-VCL" secondAttribute="leading" constant="20" id="ZaZ-na-buP"/>
+                            <constraint firstItem="dKU-JM-2PX" firstAttribute="top" secondItem="Qnj-bA-B2V" secondAttribute="bottom" constant="8" id="ayD-pd-OBi"/>
+                            <constraint firstItem="Dyx-iv-QfX" firstAttribute="leading" secondItem="dKU-JM-2PX" secondAttribute="trailing" constant="8" id="caB-gM-8g2"/>
+                            <constraint firstItem="Po1-cE-E0n" firstAttribute="centerY" secondItem="h8Y-K3-fLD" secondAttribute="centerY" id="hBe-7V-5ks"/>
+                            <constraint firstItem="PDU-ek-zOi" firstAttribute="top" secondItem="Qnj-bA-B2V" secondAttribute="top" id="kRp-9b-Do5"/>
+                            <constraint firstAttribute="trailing" secondItem="tHa-D4-JIH" secondAttribute="trailing" constant="20" id="sDw-2h-qAp"/>
+                            <constraint firstItem="zWL-nI-Tww" firstAttribute="top" secondItem="wgd-Nq-ade" secondAttribute="bottom" constant="8" id="sN8-eb-qvW"/>
+                            <constraint firstItem="tHa-D4-JIH" firstAttribute="leading" secondItem="EFx-jD-B3A" secondAttribute="trailing" constant="20" id="uOI-SQ-LOo"/>
+                            <constraint firstItem="Qnj-bA-B2V" firstAttribute="width" secondItem="PDU-ek-zOi" secondAttribute="width" id="xo5-Ta-ypf"/>
+                            <constraint firstItem="zWL-nI-Tww" firstAttribute="leading" secondItem="iBm-zC-VCL" secondAttribute="leading" constant="20" id="zql-hw-YEW"/>
+                            <constraint firstAttribute="trailing" secondItem="43A-mR-uyj" secondAttribute="trailing" constant="20" id="zs2-Vp-lNf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aAnswerButton" destination="Qnj-bA-B2V" id="Haq-gw-TaZ"/>
+                        <outlet property="bAnswerButton" destination="PDU-ek-zOi" id="pGO-Lr-2Sa"/>
+                        <outlet property="cAnswerButton" destination="dKU-JM-2PX" id="0cT-Lj-sRm"/>
+                        <outlet property="dAnswerButton" destination="Dyx-iv-QfX" id="yiH-Zr-Kwn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbr-S7-mef" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2303" y="-738"/>
+        </scene>
+        <!--Whats Event View Controller-->
+        <scene sceneID="hu9-qw-QaK">
+            <objects>
+                <viewController id="AJk-r9-4ss" customClass="WhatsEventViewController" customModule="FootballLegends" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="st3-NE-Wa7"/>
+                        <viewControllerLayoutGuide type="bottom" id="sEm-l8-6TS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="moL-qR-Roo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVz-6o-hca">
+                                <rect key="frame" x="20" y="20" width="32" height="32"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <action selector="backAction:" destination="AJk-r9-4ss" eventType="touchUpInside" id="OKg-Ie-P2F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dS-YY-1fL">
+                                <rect key="frame" x="274" y="20" width="26" height="26"/>
+                                <state key="normal" image="soundon"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="p27-fg-b2D">
+                                <rect key="frame" x="218" y="20" width="25" height="25"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxZ-Xb-tMd">
+                                <rect key="frame" x="199" y="22" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cup" translatesAutoresizingMaskIntoConstraints="NO" id="jnD-U2-ogw">
+                                <rect key="frame" x="174" y="20" width="25" height="25"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Dg-L0-1x7">
+                                <rect key="frame" x="243" y="23" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winner UEFA Chempions Legue 2015?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJ3-Fe-2ua">
+                                <rect key="frame" x="20" y="60" width="280" height="50"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uefa" translatesAutoresizingMaskIntoConstraints="NO" id="NkJ-tg-sR8">
+                                <rect key="frame" x="20" y="118" width="280" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="vwm-hm-T3a"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nf2-Z6-Uwx">
+                                <rect key="frame" x="20" y="454" width="136" height="43"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7702022623" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Real Madrid CF "/>
+                                <connections>
+                                    <action selector="aAnswerAction:" destination="AJk-r9-4ss" eventType="touchUpInside" id="tpT-YJ-tm5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5O-ub-Ohk">
+                                <rect key="frame" x="164" y="454" width="136" height="43"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7702022623" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="FC Bayern Munchen "/>
+                                <connections>
+                                    <action selector="bAnswerAction:" destination="AJk-r9-4ss" eventType="touchUpInside" id="bnr-FR-9yP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mn9-T0-C2V">
+                                <rect key="frame" x="20" y="505" width="136" height="43"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7702022623" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="1a8-ib-kUf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title=" FC Barcelona"/>
+                                <connections>
+                                    <action selector="cAnswerAction:" destination="AJk-r9-4ss" eventType="touchUpInside" id="U7J-zk-XZ1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezA-lV-54w">
+                                <rect key="frame" x="164" y="505" width="136" height="43"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7702022623" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="11"/>
+                                <state key="normal" title="Club Atletico de Madrid"/>
+                                <connections>
+                                    <action selector="dAnswerAction:" destination="AJk-r9-4ss" eventType="touchUpInside" id="yNx-DY-0bo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25490196079999999" green="0.61960784310000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nf2-Z6-Uwx" firstAttribute="width" secondItem="f5O-ub-Ohk" secondAttribute="width" id="21A-vQ-QNN"/>
+                            <constraint firstItem="VxZ-Xb-tMd" firstAttribute="leading" secondItem="jnD-U2-ogw" secondAttribute="trailing" id="24x-lB-ZhI"/>
+                            <constraint firstAttribute="trailing" secondItem="NkJ-tg-sR8" secondAttribute="trailing" constant="20" id="4Tw-qp-jNz"/>
+                            <constraint firstItem="NkJ-tg-sR8" firstAttribute="leading" secondItem="moL-qR-Roo" secondAttribute="leading" constant="20" id="6AQ-el-3TO"/>
+                            <constraint firstItem="f5O-ub-Ohk" firstAttribute="top" secondItem="nf2-Z6-Uwx" secondAttribute="top" id="6w0-Zw-rDu"/>
+                            <constraint firstItem="SVz-6o-hca" firstAttribute="top" secondItem="st3-NE-Wa7" secondAttribute="bottom" constant="20" id="7h6-1L-G7o"/>
+                            <constraint firstItem="9dS-YY-1fL" firstAttribute="top" secondItem="st3-NE-Wa7" secondAttribute="bottom" constant="20" id="7u8-lM-Dss"/>
+                            <constraint firstAttribute="trailing" secondItem="9dS-YY-1fL" secondAttribute="trailing" constant="20" id="9p5-Wy-D2q"/>
+                            <constraint firstItem="ezA-lV-54w" firstAttribute="trailing" secondItem="f5O-ub-Ohk" secondAttribute="trailing" id="AoN-za-0KC"/>
+                            <constraint firstItem="1Dg-L0-1x7" firstAttribute="leading" secondItem="p27-fg-b2D" secondAttribute="trailing" id="DCw-99-S4v"/>
+                            <constraint firstItem="mJ3-Fe-2ua" firstAttribute="top" secondItem="SVz-6o-hca" secondAttribute="bottom" constant="8" id="ENU-RB-ZM3"/>
+                            <constraint firstItem="mn9-T0-C2V" firstAttribute="leading" secondItem="nf2-Z6-Uwx" secondAttribute="leading" id="HZO-ZQ-6QJ"/>
+                            <constraint firstItem="f5O-ub-Ohk" firstAttribute="leading" secondItem="nf2-Z6-Uwx" secondAttribute="trailing" constant="8" id="HzF-tW-LZQ"/>
+                            <constraint firstItem="9dS-YY-1fL" firstAttribute="centerY" secondItem="1Dg-L0-1x7" secondAttribute="centerY" id="LpW-R4-Rcu"/>
+                            <constraint firstItem="mJ3-Fe-2ua" firstAttribute="leading" secondItem="moL-qR-Roo" secondAttribute="leading" constant="20" id="ORN-j0-CJj"/>
+                            <constraint firstItem="mn9-T0-C2V" firstAttribute="height" secondItem="f5O-ub-Ohk" secondAttribute="height" id="QG5-Cu-gUr"/>
+                            <constraint firstItem="p27-fg-b2D" firstAttribute="top" secondItem="jnD-U2-ogw" secondAttribute="top" id="Tai-S4-Te4"/>
+                            <constraint firstItem="SVz-6o-hca" firstAttribute="leading" secondItem="moL-qR-Roo" secondAttribute="leading" constant="20" id="UbM-qC-MbY"/>
+                            <constraint firstItem="mn9-T0-C2V" firstAttribute="leading" secondItem="moL-qR-Roo" secondAttribute="leading" constant="20" id="Vw3-rq-Ao8"/>
+                            <constraint firstItem="p27-fg-b2D" firstAttribute="leading" secondItem="VxZ-Xb-tMd" secondAttribute="trailing" constant="8" id="Xcu-Lc-k3p"/>
+                            <constraint firstItem="9dS-YY-1fL" firstAttribute="top" secondItem="p27-fg-b2D" secondAttribute="top" id="a98-nI-OxJ"/>
+                            <constraint firstItem="mn9-T0-C2V" firstAttribute="width" secondItem="ezA-lV-54w" secondAttribute="width" id="atS-e1-J8o"/>
+                            <constraint firstItem="ezA-lV-54w" firstAttribute="bottom" secondItem="mn9-T0-C2V" secondAttribute="bottom" id="eSQ-gv-wmi"/>
+                            <constraint firstItem="mn9-T0-C2V" firstAttribute="height" secondItem="nf2-Z6-Uwx" secondAttribute="height" id="hLp-ok-PMI"/>
+                            <constraint firstAttribute="trailing" secondItem="mJ3-Fe-2ua" secondAttribute="trailing" constant="20" id="jha-5b-kF1"/>
+                            <constraint firstItem="sEm-l8-6TS" firstAttribute="top" secondItem="mn9-T0-C2V" secondAttribute="bottom" constant="20" id="kwc-i0-3b7"/>
+                            <constraint firstItem="NkJ-tg-sR8" firstAttribute="top" secondItem="mJ3-Fe-2ua" secondAttribute="bottom" constant="8" id="m84-bA-65B"/>
+                            <constraint firstItem="p27-fg-b2D" firstAttribute="centerY" secondItem="VxZ-Xb-tMd" secondAttribute="centerY" id="nSz-fR-3vV"/>
+                            <constraint firstItem="mn9-T0-C2V" firstAttribute="top" secondItem="nf2-Z6-Uwx" secondAttribute="bottom" constant="8" id="p0q-Ta-3UB"/>
+                            <constraint firstItem="mn9-T0-C2V" firstAttribute="height" secondItem="ezA-lV-54w" secondAttribute="height" id="rY1-wT-Kt0"/>
+                            <constraint firstAttribute="trailing" secondItem="ezA-lV-54w" secondAttribute="trailing" constant="20" id="sIa-9w-dGB"/>
+                            <constraint firstItem="ezA-lV-54w" firstAttribute="leading" secondItem="mn9-T0-C2V" secondAttribute="trailing" constant="8" id="teE-eW-bJk"/>
+                            <constraint firstItem="9dS-YY-1fL" firstAttribute="leading" secondItem="1Dg-L0-1x7" secondAttribute="trailing" constant="20" id="uRd-IF-uni"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aAnswerButton" destination="nf2-Z6-Uwx" id="Zxv-om-6AK"/>
+                        <outlet property="bAnswerButton" destination="f5O-ub-Ohk" id="VVY-yd-9BB"/>
+                        <outlet property="cAnswerButton" destination="mn9-T0-C2V" id="rf7-Xu-Fl4"/>
+                        <outlet property="dAnswerButton" destination="ezA-lV-54w" id="IVd-0P-Y3i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RBz-5Z-l4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1902" y="-376"/>
         </scene>
         <!--Whats Player View Controller-->
         <scene sceneID="CPb-qn-6zR">
@@ -559,7 +781,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpE-Xh-AAA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2324" y="-1199"/>
+            <point key="canvasLocation" x="2303" y="-1355"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fAi-G9-eP5">
@@ -585,6 +807,7 @@
         <image name="What's Event?" width="100" height="100"/>
         <image name="backButton" width="32" height="32"/>
         <image name="ball" width="512" height="512"/>
+        <image name="barca" width="567" height="574"/>
         <image name="cup" width="25" height="25"/>
         <image name="fifty" width="50" height="50"/>
         <image name="left" width="48" height="48"/>
@@ -594,5 +817,6 @@
         <image name="rocket" width="50" height="50"/>
         <image name="soundon" width="26" height="26"/>
         <image name="star" width="25" height="25"/>
+        <image name="uefa" width="656" height="369"/>
     </resources>
 </document>

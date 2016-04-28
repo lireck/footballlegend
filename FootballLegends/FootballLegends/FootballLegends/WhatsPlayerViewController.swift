@@ -17,12 +17,14 @@ class WhatsPlayerViewController: BaseViewController, UICollectionViewDelegate, U
     let alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
     var lettersArray = Array<String>()
     let letterViewBuilder = LetterViewBuilder.init(numberOfViews: 5)
+    
     var selectedLetterView = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         lettersArray = getSetOfRandomLetters(numberOfLetters)
         view.addSubview(letterViewBuilder.getLetterViewsInSuperviewRect(view.frame, underTheViewRect: playerImageView.frame))
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -78,8 +80,6 @@ class WhatsPlayerViewController: BaseViewController, UICollectionViewDelegate, U
         return letter
 
     }
-    
-    
     
 }
 
