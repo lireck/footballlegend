@@ -9,15 +9,13 @@
 import UIKit
 
 class LetterView: UIView {
+    @IBOutlet private weak var letterLabel: UILabel!
+}
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
+extension LetterView {
+    func setLetter(letter : String) {
+        letterLabel.text = letter
     }
-    */
-
 }
 
 extension UIView {

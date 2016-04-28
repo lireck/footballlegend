@@ -15,33 +15,14 @@ class WhatsPlayerViewController: BaseViewController, UICollectionViewDelegate, U
     @IBOutlet weak var playerImageView: UIImageView!
     
     let alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-    var lettersSet = Set<String>()
-    
-    
+    var lettersArray = Array<String>()
+    let letterViewBuilder = LetterViewBuilder.init(numberOfViews: 5)
+    var selectedLetterView = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        lettersSet = getSetOfRandomLetters(numberOfLetters)
-        let letterViewBuilder = LetterViewBuilder.init(numberOfViews: 5)
+        lettersArray = getSetOfRandomLetters(numberOfLetters)
         view.addSubview(letterViewBuilder.getLetterViewsInSuperviewRect(view.frame, underTheViewRect: playerImageView.frame))
-//        var views = Array<UIView>()
-//        let view1 = LetterView.createView()
-//        view1.frame = CGRectMake(0, 0, 30, 30)
-//        let view2 = LetterView.createView()
-//        view2.frame = CGRectMake(view1.frame.origin.x + view1.frame.size.width + 8, 0, 30, 30)
-//        views.append(view1)
-//        views.append(view2)
-//        var totalWidth = 0.0 as CGFloat
-//        for _ in views {
-//            totalWidth += 38
-//        }
-//        
-//        let sx = (view.frame.size.width / 2) - (totalWidth / 2)
-//        let sview = UIView.init(frame: CGRectMake(sx, 240, totalWidth, 30))
-//        for view in views {
-//            sview.addSubview(view)
-//        }
-//        view.addSubview(sview)
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,24 +40,36 @@ class WhatsPlayerViewController: BaseViewController, UICollectionViewDelegate, U
    
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(String(WhatsPlayerCell), forIndexPath: indexPath) as! WhatsPlayerCell
-        let letterArray = Array(lettersSet)
-        let letter = letterArray[indexPath.row]
+        let letter = lettersArray[indexPath.row]
         cell.setLetter(letter)
         return cell
     }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        if selectedLetterView <= letterViewBuilder.viewsCount {
+        let letterView = letterViewBuilder.letterViews[selectedLetterView] as LetterView
+        let cell = collectionView.cellForItemAtIndexPath(indexPath)
+        cell?.hidden = true
+        collectionView.reloadItemsAtIndexPaths([indexPath])
+        let letter = lettersArray[indexPath.row]
+        letterView.setLetter(letter)
+        selectedLetterView += 1
+        }
+    }
+    
 // MARK: IBActions
     @IBAction func backAction(sender: AnyObject) {
         navigationController?.popViewControllerAnimated(true)
     }
 // MARK: Private methods
-    private func getSetOfRandomLetters(count : Int) -> Set<String> {
-        var lettersSet = Set<String>()
+    private func getSetOfRandomLetters(count : Int) -> Array<String> {
+        var letterArray = Array<String>()
         
-        while lettersSet.count < 14 {
-            lettersSet.insert(randomLetter())
+        while letterArray.count < 14 {
+            letterArray.append(randomLetter())
         }
         
-        return lettersSet
+        return letterArray
     }
     
     private func randomLetter() -> String {
@@ -85,6 +78,8 @@ class WhatsPlayerViewController: BaseViewController, UICollectionViewDelegate, U
         return letter
 
     }
+    
+    
     
 }
 
